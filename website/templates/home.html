@@ -1,0 +1,22 @@
+
+
+
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+    <form method="POST">
+<h1 align="center">Menu</h1>
+<ul class="game pick" id="game_pick">
+
+  <p>which game would you like to play?
+      <p>
+        <select name="game_select" id="game_select">
+            <option disabled selected value="0">-- pick a game--</option>
+            <option value=1> &#45; GuessGame</option>
+            <option value=2> &#45; CurrencyyRouletteGame</option>
+            <option value=3> &#45; memoGame</option>
+        </select>
+      <p>let's choose a diffuclt level!</p>
+      <input name="level_select" id="level_select" type="submmit" placeholder="between 1-5">
+       <button type="submit"  class="btn btn-primary">play</button>
+     </form>
+</ul>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block title %}Score Table{% endblock %} {% block
+content %}
+        <h1>Top 3 rank!</h1>
+    <TABLE BORDER="5"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="3">
+   <TR>
+      <TH COLSPAN="2"><BR><H3>Ranking List</H3>
+      </TH>
+   </TR>
+   <TR>
+      <TH>NickName</TH>
+      <TH>Points</TH>
+   </TR>
+   <TR ALIGN="CENTER">
+       <TD>{{ranklist[0][0]}}</TD>
+      <TD>{{ranklist[0][1]}}</TD>
+      </TR>
+   <TR ALIGN="CENTER">
+      <TD>{{ranklist[1][0]}}</TD>
+      <TD>{{ranklist[1][1]}}</TD>
+   </TR>
+   <TR ALIGN="CENTER">
+      <TD>{{ranklist[2][0]}}</TD>
+      <TD>{{ranklist[2][1]}}</TD>
+   </TR>
+   
+</TABLE>
+    {% endblock %}
+</body>
+    </HTML>

@@ -1,0 +1,16 @@
+
+
+{% extends "base.html" %} {% block title %}Guess Game{% endblock %} {% block content%}
+<ul class="game pick" id="currency_game">
+
+    <h1>Currency Roulette Game </h1>
+    <p> The Value in USD is {{Money_Value}} please insert your guess in ILS! </p>
+    <p>
+     <form method="POST">
+    <input name="user_guess" id="user_guess" type="submmit"  placeholder="insert your guess">
+    <br>
+       <button type="submit"  class="btn btn-primary">insert guess</button>
+     </form>
+
+</ul>
+{% endblock %}

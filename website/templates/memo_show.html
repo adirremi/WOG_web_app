@@ -1,0 +1,19 @@
+
+
+{% extends "base.html" %} {% block title %}Guess Game{% endblock %} {% block content%}
+<ul class="game pick" id="currency_game">
+
+    <h1>Currency Roulette Game </h1>
+    <p> let see if you rember !! </p>
+    <p>
+     <form method="POST">
+    {% for i in range(Money_Value): %}
+    <input name="user_guess{{i}}" id="user_guess" type="submmit"  placeholder="insert your{{i+1}} guess">
+    <br>
+    {% endfor%}
+     <button type="submit"  class="btn btn-primary">insert guess</button>
+     </form>
+
+
+</ul>
+{% endblock %}
