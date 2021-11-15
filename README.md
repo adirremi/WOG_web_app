@@ -20,5 +20,5 @@ pip install -r requirements.txt
 python main_app.py
   
   now go to:
-  http://localhost:8777/
+  http://localhost:8777/logout
   
