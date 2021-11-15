@@ -1,0 +1,6 @@
+flask
+SQLAlchemy==1.3.12
+flask-login
+flask_sqlalchemy
+forex_python
+Flask-SQLAlchemy==2.4.1
